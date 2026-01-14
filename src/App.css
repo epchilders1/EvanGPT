@@ -1,0 +1,92 @@
+
+.chat-background{
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+  background-color: #212121;
+  height: 100vh;
+  grid-template-rows: 5vh 80vh 35vh;
+  padding: 10px;
+  overflow-y: hidden;
+}
+
+.chat-background div{
+  border-radius: 10px;
+  align-self: center;
+}
+
+.chat-background div.header {
+  grid-area: header;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top:0;
+  padding: 10px;
+}
+
+.chat-background div.header .logo{
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex:auto;
+  font-size: 1.5rem;
+  gap: 20px;
+}
+.chat-background div.header a {
+  background-color: transparent;
+  transition: transform 0.5s ease-in-out
+}
+
+.chat-background div.header a:hover {
+    transform: scale(1.05);
+}
+
+
+.chat-background div.header .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  flex-shrink: 0; 
+}
+.chat-background div.header .trash{
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex:auto;
+  font-size: 1.5rem;
+  gap: 20px;
+}
+
+.chat-background div.content {
+  grid-area: content;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.chat-background div.footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+  display: fixed;
+  align-items: center;
+  bottom: 0;
+}
+
+
+
+.input{
+  justify-content:end;
+  background-color: beige;
+  max-height: 5vh;
+  border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+.message-container {
+  width: 60vw;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-list {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 35px; 
+  padding-bottom: 65vh;
+}
